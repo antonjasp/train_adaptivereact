@@ -1,0 +1,59 @@
+header {
+  background-color: rgba(33, 28, 28, 1);
+  color: rgba(165, 193, 255, 1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 76px;
+}
+.logoHeader {
+  grid-template-columns: 1fr;
+  font-family: Inter;
+  text-align: center;
+  justify-self: left;
+  align-self: center;
+  margin-left: 10px;
+}
+.contactHeader {
+  justify-self: right;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+  grid-template-rows: 1fr;
+  margin-right: 10px;
+  & img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.aws {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 32px;
+}
+.air {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 16px;
+}
+@media (max-width: 432px) {
+  .contactHeader {
+    font-size: 12px;
+
+    & img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .aws {
+    font-size: 30px;
+  }
+  .air {
+    font-size: 14px;
+  }
+}

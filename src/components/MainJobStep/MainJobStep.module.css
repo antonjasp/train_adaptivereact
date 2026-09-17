@@ -1,0 +1,147 @@
+.jobStepWrapper {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+}
+.jobStepWrapper h1 {
+  justify-self: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.jobStepContainer {
+  margin-bottom: 30px;
+  display: grid;
+  justify-self: center;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  width: 90%;
+  height: 440px;
+}
+
+.step1 {
+  display: grid;
+  justify-content: center;
+  align-self: flex-start;
+  justify-self: flex-start;
+  text-align: center;
+}
+.step2 {
+  display: grid;
+  justify-content: center;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+.arrow {
+  width: 115px;
+  height: 25px;
+  align-self: center;
+  justify-content: center;
+}
+.arrow img {
+  width: 150px;
+  height: 25px;
+  transform: rotate(40deg);
+}
+.arrow2 {
+  width: 115px;
+  height: 25px;
+  align-self: center;
+  justify-content: center;
+}
+.arrow2 img {
+  width: 150px;
+  height: 25px;
+  transform: rotate(-40deg);
+}
+@media (max-width: 1618px) {
+  .jobStepContainer {
+    margin-bottom: 30px;
+    display: grid;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto 140px auto;
+    width: 90%;
+    height: auto;
+  }
+  .arrow2 img {
+    width: 150px;
+    height: 25px;
+    transform: rotate(-220deg);
+  }
+  #step11 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  #step12 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  #step13 {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  #step14 {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  #step15 {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  #step16 {
+    grid-column: 2;
+    grid-row: 6;
+  }
+  #step17 {
+    grid-column: 3;
+    grid-row: 7;
+  }
+  #step18 {
+    grid-column: 2;
+    grid-row: 8;
+  }
+  #step19 {
+    grid-column: 1;
+    grid-row: 9;
+  }
+  #step110 {
+    grid-column: 2;
+    grid-row: 10;
+  }
+  #step111 {
+    grid-column: 3;
+    grid-row: 11;
+  }
+  #step112 {
+    grid-column: 2;
+    grid-row: 12;
+  }
+  #step113 {
+    grid-column: 1;
+    grid-row: 13;
+  }
+}
+@media (max-width: 432px) {
+  .jobStepContainer {
+    margin-bottom: 30px;
+    display: grid;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: 90px 90px 90px;
+    width: 90%;
+    height: auto;
+  }
+  .arrow2 img {
+    width: 90px;
+    height: 25px;
+    transform: rotate(-220deg);
+  }
+  .arrow img {
+    width: 90px;
+    height: 25px;
+    transform: rotate(40deg);
+  }
+}

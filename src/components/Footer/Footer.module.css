@@ -1,0 +1,72 @@
+footer {
+  width: 100%;
+  height: 453px;
+  margin-top: 30px;
+
+  background-repeat: no-repeat; /* Вимикає повторення */
+  background-size: cover; /* Масштабує зображення, щоб воно покривало весь блок */
+  background-position: center; /* Центрує зображення */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+}
+.contactCard {
+  align-self: center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 150px 150px;
+  justify-content: center;
+  align-items: center;
+}
+.contactCard img {
+  width: 150px;
+  height: 150px;
+  justify-self: center;
+  align-self: center;
+}
+.contactCard a {
+  justify-self: center;
+  align-self: center;
+}
+.contactCard p {
+  font-family: Inter;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 32px;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 968px) {
+  .contactCard {
+    grid-template-rows: 100px 100px;
+  }
+  .contactCard img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contactCard p {
+    font-weight: 800;
+    font-size: 23px;
+  }
+  footer {
+    height: 300px;
+  }
+}
+@media (max-width: 720px) {
+  footer {
+    height: 250px;
+  }
+  .contactCard {
+    grid-template-rows: 70px 70px;
+  }
+  .contactCard img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .contactCard p {
+    font-weight: 800;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,65 @@
+.swtichCompanyWrap {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 660px;
+
+  background-repeat: no-repeat; /* Вимикає повторення */
+  background-size: cover; /* Масштабує зображення, щоб воно покривало весь блок */
+  background-position: center; /* Центрує зображення */
+}
+.swtichCompanyWrap h1 {
+  color: white;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
+}
+.switchCardGroupe {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 155px;
+}
+.switchCompanyCard {
+  width: 310px;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Встановлюємо відносне позиціонування для блоку */
+}
+.switchCompanyCard img {
+  position: absolute;
+  top: -61px;
+  width: 122px;
+  height: 122px;
+}
+.switchCompanyCard p {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 32px;
+  text-align: center;
+}
+@media (max-width: 1140px) {
+  .switchCardGroupe {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  .swtichCompanyWrap {
+    width: 100%;
+    height: auto;
+  }
+}
