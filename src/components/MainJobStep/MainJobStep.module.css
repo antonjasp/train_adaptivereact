@@ -124,24 +124,29 @@
 }
 @media (max-width: 432px) {
   .jobStepContainer {
-    margin-bottom: 30px;
-    display: grid;
-    justify-self: center;
-    align-items: center;
-    text-align: center;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    grid-template-columns: 90px 90px 90px;
-    width: 90%;
-    height: auto;
+    grid-template-columns: auto 90px auto;
+    & img {
+      width: 80px;
+      height: 80px;
+    }
+    & p {
+      font-size: 12px;
+    }
   }
-  .arrow2 img {
-    width: 90px;
+  .arrow {
+    width: 70px;
     height: 25px;
-    transform: rotate(-220deg);
   }
   .arrow img {
-    width: 90px;
+    width: 105px;
     height: 25px;
-    transform: rotate(40deg);
+  }
+  .arrow2 {
+    width: 70px;
+    height: 25px;
+  }
+  .arrow2 img {
+    width: 105px;
+    height: 25px;
   }
 }

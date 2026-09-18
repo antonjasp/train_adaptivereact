@@ -66,6 +66,7 @@
 .caption {
   justify-self: center;
   color: aliceblue;
+  white-space: nowrap;
 }
 @media (max-width: 720px) {
   /* main wrapper general start */
@@ -138,8 +139,7 @@
   .wrapperNomaney {
     height: 160px;
     width: 360px;
-
-    column-gap: 20px;
+    column-gap: 10px;
   }
   .itemNomoney {
     display: grid;
@@ -147,5 +147,8 @@
       width: 88px;
       height: 74px;
     }
+  }
+  .caption {
+    font-size: 14px;
   }
 }

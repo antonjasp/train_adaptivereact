@@ -1,4 +1,4 @@
-import styles from "./MainJobStep.module.css";
+import styles from './MainJobStep.module.css';
 export function MainJobStep() {
   return (
     <>
